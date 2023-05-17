@@ -12,11 +12,12 @@ class Article extends Model
         'name',
         'description',
         'image',
+        'user_id',
     ];
 
-    public function users(){
+    public function user(){
 
-        return $this->hasMany(Article::class);
+        return $this->belongsTo(User::class);
     }
   
 }

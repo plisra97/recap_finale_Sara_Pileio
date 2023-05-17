@@ -1,4 +1,4 @@
-<x-layout header="Tutte gli articoli">
+<x-layout header="Tutti gli articoli">
 
     <div class="container my-5">
         <div class="row justify-content-center">
@@ -10,7 +10,7 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ $article->name }}</h5>
                          
-                          {{-- <a href="{{ route('article.show', compact('article')) }}" class="btn btn-dark mt-3">Scopri di piu'</a> --}}
+                          <a href="{{ route('article.show', compact('article')) }}" class="btn btn-dark mt-3">Scopri di piu'</a>
                         </div>
                     </div>
                 </div>
